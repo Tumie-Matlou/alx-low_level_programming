@@ -33,6 +33,7 @@ int main(void)
 				}
 				o = '0';
 			}
+			t = '0';
 		}
 	}
 	putchar('\n');
