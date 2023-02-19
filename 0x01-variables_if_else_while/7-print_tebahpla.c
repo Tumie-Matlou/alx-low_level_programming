@@ -8,7 +8,7 @@
 int main(void)
 {	char ahpla = 'z';
 
-	for (ahpla = 'z'; ahpla >= 'a'; ahpla--)
+	for (ahpla = 'z'; ahpla >= 'a'; ahpla--) /* variable aphla begins at letter z, terminates at a and decrements by a letter */
 	{	putchar(ahpla);
 	}
 	putchar('\n');
