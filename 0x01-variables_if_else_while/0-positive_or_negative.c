@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-	int n;
+	int n; /* intialising a variable n */
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n < 0)
-{	printf("%d is negative\n", n);
+	if (n < 0) /* setting condition for program to proceed ONLY if TRUE */
+{	printf("%d is negative\n", n); /* print the sentence in quotes when condition above is met */
 }
-	else if (n > 0)
-{	printf("%d is positive\n", n);
+	else if (n > 0) /* otherwise, the program should proceed ONLY if this alternate condition is TRUE */
+{	printf("%d is positive\n", n); /* print the sentence in quotes when condition above is met */
 }
-else
-{	printf("%d is zero\n", n);
+else /* Proceed if none of the above conditions are met */
+{	printf("%d is zero\n", n); /* print the sentence in quotes */
 }
 	return (0);
 }
