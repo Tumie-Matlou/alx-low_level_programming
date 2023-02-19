@@ -8,15 +8,15 @@
  */
 int main(void)
 {
-	char al = 'a';
+	char al = 'a'; /* initialise lowercase alphabets(al) to a */
 
-	while (al <= 'z')
+	while (al <= 'z') /* whenever the letter is z or below, proceed to code block*/
 	{
-		if ((al != 'q') && (al != 'e'))
+		if ((al != 'q') && (al != 'e')) /* proceed to print letters that are NOT q and e, */
 		{
 			putchar(al);
 		}
-		al++;
+		al++; /* increment by a letter */
 	}
 	putchar('\n');
 	return (0);
