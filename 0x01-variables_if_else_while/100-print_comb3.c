@@ -24,6 +24,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	putchar('\n'); /* add a newline */
 	return (0);
 }
