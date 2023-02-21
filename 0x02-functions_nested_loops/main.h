@@ -55,7 +55,7 @@ int print_sign(int n);
  * return: 0 (success)
  */
 
-int _abs(int);
+int _abs(int n);
 
 
 

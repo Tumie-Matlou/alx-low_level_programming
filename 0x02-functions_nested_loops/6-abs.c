@@ -2,17 +2,16 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @i: integer to compute
+ * @n: integer to compute
  * Return: 0 (success)
  */
-int _abs(int i)
-{	int j;
-	if (i < 0)
-	{	j = ((i * -1));
-		_putchar(j);
-	}
-	else if (i >= 0)
-	{	_putchar(i);
-	}
+int _abs(int n)
+{
+if (n < 0)
+{	return (-n);
 }
-
+else if (n >= 0)
+{	return(n);
+}
+return (0);
+}
