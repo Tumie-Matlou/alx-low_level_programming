@@ -32,4 +32,14 @@ void print_alphabet_x10(void);
 
 int _islower(int c);
 
+/**
+ * _isalpha - checks if character is alphabetic (both lower and uper cases)
+ * @c: the character to check
+ *
+ * Return: int
+ */
+
+int _isalpha(int c);
+
+
 #endif
