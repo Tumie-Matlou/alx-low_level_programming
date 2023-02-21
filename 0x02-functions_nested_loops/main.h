@@ -50,7 +50,12 @@ int _isalpha(int c);
 
 int print_sign(int n);
 
+/**
+ * _abs - computes the absolute number of the integer
+ * return: 0 (success)
+ */
 
+int _abs(int);
 
 
 

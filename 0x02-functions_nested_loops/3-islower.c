@@ -6,10 +6,11 @@
  * Return: 0 if not lowercase, 1 (success) if lowercase
  */
 int _islower(int c)
-{	if ((c >= 'a') && (c <= 'z'))
-	{
-		return (1);
-	}
+{
+if ((c >= 'a') && (c <= 'z'))
+{
+	return (1);
+}
 else
 {
 	return (0);
