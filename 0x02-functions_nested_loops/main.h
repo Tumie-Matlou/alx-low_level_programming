@@ -41,5 +41,38 @@ int _islower(int c);
 
 int _isalpha(int c);
 
+/**
+ * print_sign - prints the sign of a value
+ * @n: the number to check
+ *
+ * Return: 0 (success)
+ */
+
+int print_sign(int n);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #endif
