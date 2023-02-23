@@ -8,5 +8,11 @@
 
 int _isupper(int c);
 
+/**
+ * _isdigit - checks for digits (0-9)
+ * @c: the digit to check
+ */
+
+int _isdigit(int c);
 
 #endif
