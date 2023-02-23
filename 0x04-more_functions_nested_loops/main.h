@@ -58,9 +58,19 @@ void more_numbers(void);
 
 /**
  * print_line - prints a straight line
+ * @n: number of times character is printed
  */
 
 void print_line(int n);
+
+
+/**
+ * print_diagonal - prints diagonal line
+ * @n: number of times printed
+ */
+
+void print_diagonal(int n);
+
 
 
 #endif
