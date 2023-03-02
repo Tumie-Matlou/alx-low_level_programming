@@ -8,16 +8,16 @@
 
 void reverse_array(int *a, int n)
 {
-	int i = 0;
-	int j = (n - 1);
-	int t;
+	int i = 0; /* declare beginning of array*/
+	int j = (n - 1);/* declare end of array*/
+	int t;/*initialize integer*/
 
-	while (i < j)
+	while (i < j)/*as long as beginning is less than end*/
 	{
-		t = *(a + i);
-		*(a + i) = *(a + j);
-		*(a + j) = t;
-		i++;
-		j--;
+		t = *(a + i);/*declare int t as pointer to beginning*/
+		*(a + i) = *(a + j);/*declare beginning to equal end*/
+		*(a + j) = t;/*declare end to equal int t*/
+		i++;/*increment beginning*/
+		j--;/*decrement end*/
 	}
 }
