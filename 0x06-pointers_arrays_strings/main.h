@@ -19,4 +19,6 @@ char *string_toupper(char *p);
 
 char *cap_string(char *p);
 
+char *leet(char *p);
+
 #endif
