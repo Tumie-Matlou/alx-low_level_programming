@@ -4,6 +4,7 @@
 °Bash shell and Vi text editor <br>
 °Betty code checker <br>
 °Betty style documentation <br>
+°GCC with -Wall -Werror -Wextra -pedantic -std=gnu89 options
 
 # Projects:
 
