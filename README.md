@@ -1,10 +1,14 @@
-# This repository consists of concepts under low-level programming.
+# Low-level programming.
 
-°Created via Ubuntu 20.04 <br>
+- This repository consist of core concepts in low-level programming.
+
+# Creasted with:
+
+°Ubuntu 20.04 <br>
 °Bash shell and Vi text editor <br>
 °Betty code checker <br>
 °Betty style documentation <br>
-°GCC with -Wall -Werror -Wextra -pedantic -std=gnu89 options
+°GCC with _-Wall -Werror -Wextra -pedantic -std=gnu89_ options
 
 # Projects:
 
