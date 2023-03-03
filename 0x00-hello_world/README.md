@@ -2,7 +2,6 @@
 
 - This directory illustrates concepts and programs with regards to C language. <br>
 - Some of these projects were achieved via shell scripts and shell script automations. <br>
-- I used the GCC Compiler along Vi text editor to code in C language. <br>
 
 # Tasks:
 
