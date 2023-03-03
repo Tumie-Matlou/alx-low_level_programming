@@ -4,7 +4,7 @@
 
 # Creasted with:
 
-°Ubuntu 20.04 <br>
+°Ubuntu 20.04 LTS <br>
 °Bash shell and Vi text editor <br>
 °Betty code checker <br>
 °Betty style documentation <br>
