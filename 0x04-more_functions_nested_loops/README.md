@@ -4,5 +4,5 @@
 
 # Tasks:
 
-0. *isupper* - a function that checks for uppercase character.
+0. <b>isupper - a function that checks for uppercase character.
 1. 
