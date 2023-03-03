@@ -1,7 +1,7 @@
 # C Variables, if else and while
 
--This directory consists of the illustration of variables, if, else, while loops in C language.
-It consists of C programs, Shell scripting, C source files and C executables.
+- This directory consists of the illustration of variables, if, else, while loops in C language.
+- It consists of C programs, Shell scripting, C source files and C executables.
 
 # Tasks: 
 
