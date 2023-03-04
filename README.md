@@ -2,7 +2,7 @@
 
 - This repository consist of core concepts in low-level programming.
 
-# Creasted with:
+# Created with:
 
 °Ubuntu 20.04 LTS <br>
 °Bash shell and Vi text editor <br>
