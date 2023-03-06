@@ -19,10 +19,10 @@ char *_strstr(char *haystack, char *needle)
 	{
 		i++;/*move to next character if no match*/
 	}
-	if (haystack[i] == needle[j])/*if string match*/
+	for (j = 0; haystack[i] != '\0' && needle[j] != '\0'; j++)/*do not compare terminating byte*/
 	{
-		return (&haystack[i]);/*return address of matching sring*/
+		if (haystack[i] == needle[j])/*if string match*/
+			return (&haystack[i]);/*return address of matching sring*/
 	}
-	else
-		return (NULL);
+	return (NULL);
 }
