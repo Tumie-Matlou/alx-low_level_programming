@@ -19,7 +19,8 @@ char *_strstr(char *haystack, char *needle)
 	{
 		i++;/*move to next character if no match*/
 	}
-	for (j = 0; haystack[i] != '\0' && needle[j] != '\0'; j++)/*do not compare terminating byte*/
+	/*do not compare terminating byte*/
+	for (j = 0; haystack[i] != '\0' && needle[j] != '\0'; j++)
 	{
 		if (haystack[i] == needle[j])/*if string match*/
 			return (&haystack[i]);/*return address of matching sring*/
