@@ -12,18 +12,31 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0, j = 0;
+	int i = 0, j, x;
 
-	/*iterate thru string*/
-	while (haystack[i] != '\0' && haystack[i] != needle[j])
+	if (needle[0] == '\0')/*first element is null, pointer to haystack*/
 	{
-		i++;/*move to next character if no match*/
+		return (haystack);
 	}
-	/*do not compare terminating byte*/
-	for (j = 0; haystack[i] != '\0' && needle[j] != '\0'; j++)
+	/*iterate thru haystack*/
+	while (haystack[i] != '\0')
 	{
-		if (haystack[i] == needle[j])/*if string match*/
-			return (&haystack[i]);/*return address of matching sring*/
+		if (haystack[i] == needle[0])
+		{
+			x = i, j = 0;
+			while (needle[j] != '\0')
+			{
+				if (haystack[x] == needle[j])/*check for match*/
+					x++, j++;
+				else
+					break;
+			} /* if matched to end, return haystack */
+			if (needle[j] == '\0')
+			{
+				return (haystack + i);
+			}
+		}
+		i++;
 	}
-	return (NULL);
+	return (NULL); /* No match */
 }
