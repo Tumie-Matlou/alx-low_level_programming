@@ -1,1 +1,3 @@
-My read me
+# Pointers, Arrays and Strings - Continued
+
+# Tasks:
