@@ -25,6 +25,10 @@ char *_strdup(char *str)
 	}
 	len++;/*include null terminator of string*/
 	dup_str = malloc(sizeof(char) * len);/*allocate memory*/
+	if (dup_str == NULL)/*validate memory*/
+	{
+		return (NULL);
+	}
 	i = 0;
 	j = 0;
 	while (j < len && i < len)
