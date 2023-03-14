@@ -17,26 +17,27 @@ char *str_concat(char *s1, char *s2)
 	char *new_string;/*initialize npointer to new string*/
 
 	if (s1 == NULL)
-		return ("");
+		s1 = "";
 	if (s2 == NULL)
-		return ("");
+		s2 = "";
 	while (*(s1 + i) || *(s2 + j))/*find the length of the strings*/
 	{
 		len1++, i++;
 		len2++, j++;
 	}
+	len2++;/*add null terminator of s2*/
 	len = len1 + len2;
 	/*allocate memory of new string*/
 	new_string = malloc(sizeof(char) * len);
 	if (new_string == NULL)/*Validate memory*/
 		return (NULL);
 	i = 0, j = 0;
-	while (i < len1 && s1[i] != '\0')/*dupicate first string*/
+	while (i < len1)/*dupicate first string*/
 	{
 		*(new_string + i) = *(s1 + i);
 		i++;
 	}
-	while (s2[j] != '\0' && j < len2)/*duplicate s2 at end of s1*/
+	while (j < len2)/*duplicate s2 at end of s1*/
 	{
 		*(new_string + i) = *(s2 + j);
 		i++, j++;
