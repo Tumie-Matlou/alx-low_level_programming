@@ -16,14 +16,14 @@ char *str_concat(char *s1, char *s2)
 	int len1 = 0, len2 = 0;
 	char *new_string;/*initialize npointer to new string*/
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (" ");
 	while (*(s1 + i) || *(s2 + j))/*find the length of the strings*/
 	{
 		len1++, i++;
 		len2++, j++;
 	}
-	len1++, len2++;/*include null terminator of s1 and s2*/
+	len2++;/*include null terminator of s1 and s2*/
 	/*allocate memory of new string*/
 	new_string = malloc(sizeof(char) * (len1 + len2));
 	if (new_string == NULL)/*Validate memory*/
