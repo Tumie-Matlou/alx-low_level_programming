@@ -20,11 +20,10 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (*(s1 + i) || *(s2 + j))/*find the length of the strings*/
-	{
+	while (*(s1 + i))/*find the length of the strings*/
 		len1++, i++;
+	while (*(s2 + j))
 		len2++, j++;
-	}
 	len2++;/*add null terminator of s2*/
 	len = len1 + len2;
 	/*allocate memory of new string*/
