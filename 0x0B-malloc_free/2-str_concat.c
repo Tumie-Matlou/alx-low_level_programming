@@ -32,12 +32,12 @@ char *str_concat(char *s1, char *s2)
 	if (new_string == NULL)/*Validate memory*/
 		return (NULL);
 	i = 0, j = 0;
-	while (i < len1)/*dupicate first string*/
+	while (i < len1 && s1[i] != '\0')/*dupicate first string*/
 	{
 		*(new_string + i) = *(s1 + i);
 		i++;
 	}
-	while (j < len2)/*duplicate s2 at end of s1*/
+	while (s2[j] != '\0' && j < len2)/*duplicate s2 at end of s1*/
 	{
 		*(new_string + i) = *(s2 + j);
 		i++, j++;
