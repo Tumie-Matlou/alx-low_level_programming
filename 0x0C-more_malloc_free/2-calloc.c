@@ -11,33 +11,20 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
-	int *arr;
+	void *ptr;
+	unsigned int i; /* match unsigned arguments */
 
-	/*Validate argument input*/
-	if (nmemb == '0' || size == '0')
+	if (nmemb <= 0 || size <= 0) /* validate input */
 		return (NULL);
 
-	/*Allocate memory*/
-	arr = malloc(size * nmemb);
-
-	/*Validate allocated memory*/
-	if (arr == NULL)
+	/* allocate memory and check if error */
+	ptr = malloc(nmemb * size);
+	if (ptr == NULL)
 		return (NULL);
 
-	/*setting value of elements to 0*/
-	i = 0;
-	if (arr != NULL && i < nmemb)
-	{
-		*(arr + i) = 0;
-		i++;
-	}
+	/* set allocated memory values to 0 */
+	for (i = 0; i < nmemb * size; i++)
+		*((char *)ptr + i) = 0; /* type cast assigning values*/
 
-	/*Value of address*/
-	i = 0;
-	while (i < nmemb && *(arr + i))
-	{
-		i++;
-	}
-	return ((void *)arr);
+	return (ptr);
 }
