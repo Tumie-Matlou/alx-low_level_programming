@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/*find length of strings*/
 	while (*(s1 + i))
 		len1++, i++;
-	while (*(s2 + j) && j < n)
+	while (j < n && *(s2 + j))
 		len2++, j++;
 	len2++;/*count null term of s2*/
 
@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*(new_string + i) = *(s1 + i);
 		i++;
 	}
-	while (j < len2 && j < n)
+	while (j < len2)
 	{
 		*(new_string + i) = *(s2 + j);
 		i++, j++;
