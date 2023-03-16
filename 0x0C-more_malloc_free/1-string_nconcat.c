@@ -27,6 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len1++, i++;
 	while (*(s2 + j) && j < n)
 		len2++, j++;
+	len2++;/*count null term of s2*/
 
 	/*allocate memory for new string*/
 	new_string = malloc(sizeof(char) * (len1 + len2));
@@ -42,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*(new_string + i) = *(s1 + i);
 		i++;
 	}
-	while (j < len2)
+	while (j < len2 && j < n)
 	{
 		*(new_string + i) = *(s2 + j);
 		i++, j++;
