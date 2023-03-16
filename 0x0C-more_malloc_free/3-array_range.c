@@ -12,7 +12,7 @@
 
 int *array_range(int min, int max)
 {
-	int i, val;
+	int i, val = (max - min + 1);
 	int *arr;
 
 	/*Validate argument inputs*/
@@ -20,19 +20,14 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	/*Allocate memory*/
-	arr = malloc(sizeof(int) * (max + 1));
+	arr = malloc(sizeof(int) * val);
 
 	/*Validate allocated memory*/
 	if (arr == NULL)
 		return (NULL);
 
 	/*iterate through array*/
-	val = min, i = 0;
-	while (i < max + 1 && val < max + 1)
-	{
-		*(arr + i) = val;
-		i++;
-		val++;
-	}
+	for (i = 0; i < val; i++)
+		*(arr + i) = min++;
 	return (arr);
 }
