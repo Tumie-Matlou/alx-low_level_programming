@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		*(new_string + i) = *(s1 + i);
 		i++;
 	}
-	while (j < len2)
+	while (j < len2 && s2[j] != '\0')
 	{
 		*(new_string + i) = *(s2 + j);
 		i++, j++;
