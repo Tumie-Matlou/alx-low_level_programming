@@ -4,11 +4,11 @@
 - Dynamic memory allocation occurs in the Heap category of memory, where the memory size is variable.
 - The programmer has to allocate a specific amount of memory to a function, then take priority to deallocate it after the function is done.
 - Allocation functions:
-°Malloc - *void \*ptr = (void \*) malloc(n \* sizeof(data type));*
-°Calloc - *void \*ptr = (void \*) calloc(size, element size);*
-°Realloc - *void \*new_ptr = (void \*) realloc(old_ptr, n \* sizeof(data type));*
+°Malloc - *void \*ptr = (void \*) malloc(n \* sizeof(data type));* <br>
+°Calloc - *void \*ptr = (void \*) calloc(size, element size);* <br>
+°Realloc - *void \*new_ptr = (void \*) realloc(old_ptr, n \* sizeof(data type));* <br>
 - Deallocation function:
-°Free - *free(void \*ptr)*
+°Free - *free(void \*ptr);*
 
 # Tasks:
 
