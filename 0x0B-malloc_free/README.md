@@ -15,3 +15,5 @@
 0. <b> Float like a butterfly, sting like a bee</b> - a function that creates an array of chars, and initializes it with a specific char.
 1. <b> The woman who has no imagination has no wings</b> - a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 2. <b> He who is not courageous enough to take risks will accomplish nothing in life</b> - a function that concatenates two strings.
+3. <b> If you even dream of beating me you'd better wake up and apologize</b> - a function that returns a pointer to a 2 dimensional array of integers.
+4. <b> It's not bragging if you can back it up</b> - a function that frees a 2 dimensional grid previously created by your alloc_grid function.
