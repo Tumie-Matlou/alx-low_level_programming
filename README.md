@@ -1,6 +1,7 @@
 # Low-level programming.
 
 - This repository consist of core concepts in low-level programming.
+- It is <b>C language</b> intensive
 
 # Created with:
 
@@ -20,6 +21,11 @@
 6. 0.05. C - Pointers, arrays
 7. 0x06. C - More pointers, arrays and strings
 8. 0x07. C - Even more
+9. 0x08. C - Recursion
+10. 0x09. C - Static Libraries
+11. 0x0A. C - Argc and Argv
+12. 0x0B. C - Malloc, free
+13. 0x0C. C - More Malloc, free
 
 # Author:
 
