@@ -9,6 +9,10 @@
  * @owner: the name of the owner
 */
 
+/*
+ * dog_t - typedef for struct dog
+ */
+
 typedef struct dog
 {
 	char *name;
