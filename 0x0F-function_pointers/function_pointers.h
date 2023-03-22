@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef _FUNCTIONPOINTERS_H_
 #define _FUNCTIONPOINTERS_H_
 
@@ -20,5 +21,16 @@ void print_name(char *name, void (*f)(char *));
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int));
+
+/**
+ * int_index -  returns the index of the first element for which
+ * the cmp function does not return 0
+ * @array: the array to search through
+ * @size: the number of elements
+ * @cmp: a pointer to a function
+ * Return: the index
+ */
+
+int int_index(int *array, int size, int (*cmp)(int));
 
 #endif
