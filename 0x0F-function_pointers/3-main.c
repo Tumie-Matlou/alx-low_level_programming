@@ -14,36 +14,30 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2;
-	int (*f)(int, int);
+	char op;
+	int (*op_func)(int, int);
+	int result;
 
-	/* validate input */
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
-
-	/* convert user input to ints and point to correct operator function */
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	f = get_op_func(argv[2]);
-
-	/*if nooperator match, exit with 'Error'*/
-	if (f == NULL || (argv[2][1] != '\0'))
-	{
+	op = *(argv[2]);
+	if ((op == '/' || op == '%') && !atoi(argv[3]))
+	{ /* divide by zero exception */
 		printf("Error\n");
-		exit(99);
+		return (100);
 	}
 
-	/*if user attems modulo or divide by 0, exit with 'Error'*/
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && argv[3][0] == '0')
-	{
+	/* actually do the operation now that we've error chcked */
+	op_func = get_op_func(&op);
+	if (op_func == NULL || argv[2][1] != '\0')
+	{ /* didn't find operator, or operator longer than 1 byte */
 		printf("Error\n");
-		exit(100);
+		return (99);
 	}
-
-	printf("%d\n", f(num1, num2)); /* calculate via function ptr */
-
+	result = op_func(atoi(argv[1]), atoi(argv[3]));
+	printf("%d\n", result);
 	return (0);
 }
