@@ -7,6 +7,7 @@
  * print_strings - prints string, followed by a new line
  * @separator: separates strings
  * @n: number of parameters
+ * @...: the parameters
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -22,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		char *string = va_arg(args, char *);
 
 		if (string == NULL)
-			printf("(nil)");
+			string = "(nil)";
 		printf("%s", string);
 		if (i != n && separator != NULL)
 			printf("%s", separator);
