@@ -1,5 +1,5 @@
 section .data
-	sentence: db 'Hello, Holberton\n', 0Ah
+	sentence: db 'Hello, Holberton\n', 0
 	length: equ $-sentence
 
 section .text
