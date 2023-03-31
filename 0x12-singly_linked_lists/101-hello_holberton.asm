@@ -1,17 +1,16 @@
 section .data
-	sentence: db 'Hello, Holberton\n', 0
-	length: equ $-sentence
+	sentence: db "Hello, Holberton", 0
+	length: db"%s", 10, 0
 
 section .text
-	global _start
+	extern printf
+	global main
 
-_start:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, sentence
-	mov rdx, length
-	syscall
+main:
+	mov esi, sentence
+	mov edi, length
+	mov eax, 0
+	call printf
 
-	mov rax, 60
-	xor rdi, rdi
-	syscall
+	mov eax, 0
+	ret
