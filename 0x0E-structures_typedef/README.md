@@ -16,7 +16,7 @@ struct student {
   - usually, `Structs` are defined at the top of the c file itself or a header file (highly recommended).
   - to access the members of a `struct`(name, id and grades), we use a dot operator (.).
   
-  ```
+  ```C
   /*variable declaration*/
   struct student student1;
   /*member accessing*/
