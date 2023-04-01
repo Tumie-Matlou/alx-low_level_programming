@@ -4,11 +4,11 @@
 - `structs` group together elements of a variety of data types that have a logical connection.
 - Below is a typical example of a struct of a student's information, such as their name, id and grades.
 
-```
-`struct`student {
-  `char` *name;
-  `int` id;
-  `float` grades;
+```C
+struct student {
+  char *name;
+  int id;
+  float grades;
   };
   ```
   
@@ -18,7 +18,7 @@
   
   ```
   /*variable declaration*/
-  `struct` student student1;
+  struct student student1;
   /*member accessing*/
   strcpy(student1.name = "James Bond")/*you need to copy or duplicate the string first*/
   student1.id =  007;
@@ -29,8 +29,8 @@
   - we can dynamically allocate spome memory for them at runt time if our program requires it.
   - if we do allocate them some memory dynamically, we would have to dereference the pointer to the struct when accessing the members.
 
-```
-`struct` student *student1 = malloc(`sizeof`(`struct`student);
+```C
+struct student *student1 = malloc(`sizeof`(`struct`student);
 
 strcpy(student1->name = "James Bond");
 student1->id =  007;
@@ -39,30 +39,30 @@ student1->grades = 96.98;
   
   Alternatively,
   
-  ```
+  ```C
   strcpy((*student1.name) = "James Bond");
   (*student1.id) =  007;
   (*student1.grades) = 96.98;
   ```
   -we can use `typedef`to reduce the tedious activity of coding '`struct` student' every time we refer to our struct.
   
-  ```
-  `typedef` `struct` student student;
+  ```C
+  typedef struct student student;
   ```
   
   Alternativlely,
   
-  ```
-  `typedef` `struct`student {
-  `char` *name;
-  `int` id;
-  `float` grades;
+  ```C
+  typedef struct student {
+  char *name;
+  int id;
+  float grades;
   } student;
   ```
   
   - now we can declare a struct variable this way:
   
-  ```
+  ```C
   student student1;
   ```
   # Tasks
