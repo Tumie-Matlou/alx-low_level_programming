@@ -25,13 +25,12 @@ struct student {
   student1.grades = 96.98;
   ```
   
-  - we dont need to place `structs on the stack.
-  - we can dynamically allocate spome memory for them at runt time if our program requires it.
-  - if we do allocate them some memory dynamically, we would have to dereference the pointer to the struct when accessing the members.
+  - we dont need to place `structs` on the stack.
+  - we can dynamically allocate some memory for them at run time if our program requires it.
+  - if we do allocate some memory dynamically, we would have to dereference the pointer to the struct when accessing the members.
 
 ```C
 struct student *student1 = malloc(`sizeof`(`struct`student);
-
 strcpy(student1->name = "James Bond");
 student1->id =  007;
 student1->grades = 96.98;
