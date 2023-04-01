@@ -1,7 +1,10 @@
 # Preprocessor Directory
 
 - this directory illustrates the preprocessor stage of compiling a c file
-- it delves into static and dynamic linking
+
+# Concepts
+
+**Static and dynamic linking**
 
 | Static Linking               | Dynamic Linking |
 |:----------------------------:|:--------------------------:|
@@ -9,4 +12,18 @@
 |last step of compilation| during runtime|
 |larger file size| smaller file size|
 |no compatibility issues| compatibility issues|
+ 
+**Preprocessor directives**
+- directives beging with '#', they tell the program to do specific commands, e.g #define, #include, #ifndef ... etc
+- Object-like Macros: a simple identifier which will be replaced by a code fragment.<br>
+syntax example: *#define BUFFER_SIZE 1024*
+
+- Function-like Macros: can take arguments, just like true functions.<br>
+syntax example: *#define SUM (a + b)*
+
+
+
+
+
+
 
