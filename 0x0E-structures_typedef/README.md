@@ -40,6 +40,8 @@ student1->grades = 96.98;
   Alternatively,
   
   ```C
+  struct student *student1 = malloc(`sizeof`(`struct`student);
+  
   strcpy((*student1.name) = "James Bond");
   (*student1.id) =  007;
   (*student1.grades) = 96.98;
