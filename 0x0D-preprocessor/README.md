@@ -1,8 +1,10 @@
 # Preprocessor Directory
 
-- this directory illustrates the preprocessor stage of compiling a c file
-- the preprocessor modifies a source code file before handing it over to the compiler.
-- it expands the directives of a c file.
+- This directory illustrates the preprocessor stage of compiling a c file
+- The preprocessor modifies a source code file before handing it over to the compiler.
+- It includes header files before the program.
+- It defines macros.
+- It expands the directives of a c file.
 
 # Concepts
 
