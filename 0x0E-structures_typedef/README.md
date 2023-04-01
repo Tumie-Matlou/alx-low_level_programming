@@ -1,8 +1,8 @@
 # Structures Directory
 
-- structures provide a way to unify several variables of different datatypes into a single, new variable type which can be assigned its own type name.
+- Structures provide a way to unify several variables of different datatypes into a single, new variable type which can be assigned its own type name.
 - `structs` group together elements of a variety of data types that have a logical connection.
-- Below is a typical example of a struct for student information, consisting their name, id and grades.
+- below is a typical example of a struct for student information, consisting their name, id and grades.
 
 ```C
 struct student {
@@ -25,7 +25,7 @@ struct student {
   student1.grades = 96.98;
   ```
   
-  - we dont need to place 'structs' on the stack.
+  - we dont need to place `structs on the stack.
   - we can dynamically allocate spome memory for them at runt time if our program requires it.
   - if we do allocate them some memory dynamically, we would have to dereference the pointer to the struct when accessing the members.
 
