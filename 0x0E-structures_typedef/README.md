@@ -10,8 +10,8 @@
   float grades;
   };*
   
-  - usually, `Structs`are defined at the top of the c file itself or a header file (highly recommended).
+  - usually, `Structs` are defined at the top of the c file itself or a header file (highly recommended).
   - to access the members of a `struct`(name, id and grades), we use a dot operator (.).
   
-  */*variable declaration*/*
-  `struct`student
+  */\*variable declaration\*/
+  `struct` student
