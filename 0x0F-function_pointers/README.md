@@ -10,7 +10,7 @@
 *Example:* 
 
 ```C
-/*defining pointer to function*/
+/*defining function*/
 void func(int);
 
 void func(int arg)
