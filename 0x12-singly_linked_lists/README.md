@@ -6,14 +6,15 @@
 ![WhatsApp Image 2023-04-02 at 16 41 17 (1)](https://user-images.githubusercontent.com/123845948/229366830-1d567699-9f5b-4e8f-be69-668e04f8d5cc.jpeg)
 
 
-- they are a data structure that give us the ability to grow and shrink a collection of like values.
+- They are a data structure that give us the ability to grow and shrink a collection of like values.
 - There are a few different linked lists, however, this directory illustrtes the singly linked one.
 
-- a linked list `node` has two members:
-    °**Data** - values we need for the program (of some datatype).
-    °**Pointer** - pointe to anothe `node` of same type.
+- A linked list `node` has two members:<br>
 
-- a set of `nodes`canbe thought of as a chain of elements we can follow. 
+    °**Data** - values we need for the program (of some datatype).<br>
+    °**Pointer** - pointe to anothe `node` of same type.<br>
+
+- A set of `nodes`canbe thought of as a chain of elements we can follow. 
 - We use `structs` to create linked lists
 _Example:_
 
@@ -29,7 +30,8 @@ typedef struct sllist /*struct sllist is a temp name so we can refer to our stru
 
 ![linked lists drawio](https://user-images.githubusercontent.com/123845948/229366657-dff005c4-def4-4764-8a84-3856b23e2d0b.png)
 
-- "Why not use arrays?", one would ask. Singly linked structures have perks that arrays do not have, especialy when wanting to insert or delete fractions of data. See the table below by geeksforgeeks.org for differences.
+- "Why not use arrays?", one would ask. Linked lists have perks that Arrays do not, especialy when wanting to insert or delete fractions of data. 
+- See the table below by geeksforgeeks.org for differences.
 
 |ARRAYS        | LINKED LISTS   |
 |:------------:|:--------------:|
