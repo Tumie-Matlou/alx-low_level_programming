@@ -1,0 +1,6 @@
+# Ignore swap files
+*~
+
+# Ignore code files
+
+*.code-workspace
