@@ -2,9 +2,8 @@
 #include "lists.h"
 
 /**
- * free_listint2 - frees a singly linked list
+ * free_listint2 - frees a singly linked list while setting head to null
  * @head: pointer to the pointer to the head node
- * Description: makes the head pointer NULL.
  */
 
 void free_listint2(listint_t **head)
