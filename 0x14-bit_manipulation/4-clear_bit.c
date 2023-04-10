@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * set_bit - sets the bit at given index to 1;
- * @n: the number to retive bit from
+ * clear_bit - sets the bit at given index to 0;
+ * @n: the number to retrive bit from
  * @index: the index
- * Return: 1 on success
+ * Return: 1 On success
  * -1 if error occurs
  */
 
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned int max;
 	unsigned long int mask = 1;
@@ -18,6 +18,6 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > max)
 		return (-1);
 	mask <<= index;
-	*n = (*n | mask);
+	*n = (*n & ~mask);
 	return (1);
 }
