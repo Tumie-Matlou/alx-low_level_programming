@@ -36,7 +36,8 @@ int exit_stat(int error, char *name, int fd)
 /**
  * main - copies a file to another
  * @argc: arguments of function
- * @argv: arry of files
+ * @argv: array of files
+ *
  * Return: 0 On success, 97-100 on failure
  */
 
