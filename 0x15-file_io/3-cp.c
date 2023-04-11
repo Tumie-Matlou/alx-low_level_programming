@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		exit_stat(97, NULL, 0);
-	
+
 	file_to = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
 	if (file_to == -1)
 		exit_stat(99, argv[2], 0);
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 	{
 		if (bytes_read == -1)
 			exit_stat(98, argv[1], 0);
-		
+
 		bytes_written = write(file_to, buffer, bytes_read);
 		if (bytes_written == -1)
 			exit_stat(99, argv[2], 0);
