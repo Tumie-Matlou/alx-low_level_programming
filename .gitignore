@@ -4,3 +4,4 @@
 # Ignore code files
 
 *.code-workspace
+*.dSYM
