@@ -14,19 +14,19 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *delete;
 	unsigned int i;
 
-	if (*head == NULL)
+	if (*head == NULL)/*Malloc check*/
 		return (-1);
 
-	if (index == 0)
+	if (index == 0)/*if only head node*/
 	{
 		*head = temp->next;
 		temp->next = NULL;
 		free(temp);
 		return (1);
 	}
-	for (i = 0; i < index - 1; i++)
+	for (i = 0; i < index - 1; i++)/*else iterate thru list*/
 		temp = temp->next;
-	if (temp == NULL || temp->next == NULL)
+	if (temp == NULL || temp->next == NULL)/*end of list*/
 		return (-1);
 	delete = temp->next;
 	temp->next = delete->next;
