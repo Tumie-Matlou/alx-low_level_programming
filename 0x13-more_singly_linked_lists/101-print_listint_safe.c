@@ -32,7 +32,7 @@ int count_node(const listint_t *head)
 			return (count);
 		}
 	}
-	return (count);
+	return (0);
 }
 
 /**
