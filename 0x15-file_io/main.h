@@ -1,6 +1,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 #include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <string.h>
@@ -11,7 +12,7 @@ int create_file(const char *filename, char *text_content);
 
 int append_text_to_file(const char *filename, char *text_content);
 
-int copy_string(char *string1, char *string2);
+int exit_stat(int error, char *name, int fd);
 
 #endif
 
